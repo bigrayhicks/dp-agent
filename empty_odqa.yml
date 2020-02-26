@@ -1,0 +1,10 @@
+services:
+  odqa:
+    build:
+      args:
+        SERVICE_NAME: odqa
+      context: ./services/skills/empty_skill/
+      dockerfile: Dockerfile
+    volumes:
+      - ./services/skills/empty_skill:/src
+version: '3.7'
